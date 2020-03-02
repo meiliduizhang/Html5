@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset {
+            width: 400px;
+        }
+        
+        .archives {
+            color: red;
+            font-size: 20px;
+        }
+        
+        .information {
+            width: 380px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        学生信息
+    </h1>
+    <fieldset>
+        <legend class="archives">学生档案</legend>
+        <form action="#" method="get">
+            姓名：
+            <br/><br/>
+            <input type="text" name="name" placeholder="请输入姓名" class="information" required="required" />
+            <span style="color:red;">*</span>
+            <br/><br/> 学号：
+            <br/><br/>
+            <input type="number" name="number" placeholder="请输入学号" class="information" required="required" />
+            <span style="color:red;">*</span>
+            <br/><br/> 手机号码：
+            <br/><br/>
+            <input type="tel" name="phone" placeholder="请输入手机号" class="information" required="required" />
+            <span style="color:red;">*</span>
+            <br/><br/> 邮箱地址：
+            <br/><br/>
+            <input type="email" name="email" placeholder="请输入邮箱地址" class="information" required="required" />
+            <span style="color:red;">*</span>
+            <br/><br/> 录取学校：
+            <br/><br/>
+            <input type="search" name="school" autocomplete="on" list="schools" class="information" />
+            <datalist id="schools">
+                <option>清华大学</option>
+                <option>北京大学</option>
+                <option>河北师范大学</option>
+                <option>河北科技大学</option>
+                <option>中山大学</option>
+                <option>太原理工大学</option>
+            </datalist>
+            <br/><br/> 入学成绩：
+            <br/><br/>
+            <input type="number" name="grade" class="information" />
+            <br/><br/> 入学时间：
+            <br/><br/>
+            <input type="date" name="time" class="information" />
+            <br/><br/>
+            <input type="submit" style="width:380px;" class="information" />
+        </form>
+    </fieldset>
+</body>
+
+</html>
